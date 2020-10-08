@@ -1,13 +1,4 @@
-/*
- * Theme Name: 
- * Theme URI: 
- * Author: Milan Savov
- * Author URI/Mail: milan.savov@gmail.com
- * Version: 1.0
- * */
 
-/* FONT
-================================================== */
 @font-face {
   font-family: 'fontello';
   src: url('../fonts/fontello.eot?37927580');
@@ -365,6 +356,7 @@ html, body {
 .portfolio-item {
     height: 280px;
     margin-bottom: 30px;
+    margin: 10px;
     position: relative;
 }
 
@@ -393,7 +385,7 @@ html, body {
 
 .portfolio-item-info {
     position: absolute;
-    top: 150px;
+    top: 120px;
     left: 0px;
     z-index: 999;
     opacity: 0;
@@ -402,6 +394,15 @@ html, body {
     -webkit-transition: opacity 0.25s ease-in-out, left 0.25s ease-in-out;
     -o-transition: opacity 0.25s ease-in-out, left 0.25s ease-in-out;
     -ms-transition: opacity 0.25s ease-in-out, left 0.25s ease-in-out;
+}
+
+#time{
+    margin: auto;
+    float: inherit;
+}
+
+.portfolio-item-info > span{
+    color: white;
 }
 
 .portfolio-item:hover .portfolio-item-info {
@@ -479,6 +480,18 @@ html, body {
     font-weight: 700;
 }
 
+table{
+    margin: auto;
+}
+.contactLink{
+    color: black;
+    font-size: 23px;
+}
+
+#iconForContact{
+margin: 30px;
+}
+
 .modal-footer {
     text-align: center;
 }
@@ -523,8 +536,7 @@ html, body {
     margin-top: 40px;
 }
 
-/* FOOTER
-================================================== */
+
 .site-footer {
     position: fixed;
     bottom: 0;
@@ -575,11 +587,14 @@ a.icon-up-bg:hover {color: #212121;}
     text-align: center;
 }
 
+
 .profileImg{
     position: relative;
-    bottom: 100px;
+    bottom: 50px;
     left: 10%;
     border-radius: 25px;
+    width: 320px;
+    height: 380px !important;
 }
 
 p > span {
